@@ -1,11 +1,11 @@
 {
   "name": "api-tsc-v1",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/js/index.js",
-    "start:dev": "nodemon --watch src --exec ts-node src/index.ts -e ts",
+    "start": "npm run start:dev",
+    "start:dev": "nodemon --watch src --exec ts-node src/server.ts -e ts",
     "start:prod": "node dist/js/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
