@@ -1,10 +1,10 @@
-import { env } from './env';
+//import { env } from './env';
 import express from 'express';
 import bodyParser from 'body-parser';
 import postRoutes from './routes/postRoutes';
 
 const app = express();
-const port = env.PORT || '8080';
+const port = process.env.PORT || '8080';
 
 app.use(bodyParser.json());
 app.use('/', postRoutes);
